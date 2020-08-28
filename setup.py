@@ -7,6 +7,9 @@ setup(
     author='Scott P. White',
     author_email='spwhite1337@gmail.com',
     packages=find_packages(),
+    entry_points={'console_scripts': [
+        'wd_sync = wedding.sync:sync'
+    ]},
     install_requires=[
         'pandas',
         'numpy',
@@ -18,5 +21,6 @@ setup(
         'plotly',
         'dash',
         'dash-bootstrap-components',
+        'awscli'
     ]
 )

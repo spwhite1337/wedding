@@ -1,6 +1,6 @@
 ﻿Venue,State,MinAirport,Latitude,Longitude
-Mustard Seed Garden,Indiana,43,,
-Iron Ember,Indiana,34,,
+Mustard Seed Garden,Indiana,43,40.043,-86.037569
+Iron Ember,Indiana,34,39.964409,-86.095272
 The Meeting House,Rhode Island,67,,
 Newport Beach House,Rhode Island,78,41.489387,-71.284654
 Meadow Brook inn,Rhode Island,90,41.43546,-71.655078
@@ -10,3 +10,5 @@ Mount Hope Farm,Rhode Island,65,41.669,-71.257
 Blissful Meadows,Massachusetts,61,42.032,-71.68133
 Sycamore at Mallow Run,Indiana,30,39.551175,-86.23565
 Barn at Zionsville,Indiana,35,39.999,-86.307
+Biltwell Event Center,Indiana,17,39.755,-86.17714
+The Homestead 1835,Indiana,101,41.717167,-86.520385

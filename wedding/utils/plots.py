@@ -2,8 +2,8 @@ import os
 import pandas as pd
 import plotly.express as px
 
-
 from config import Config
+px.set_mapbox_access_token(Config.mapbox_token)
 
 
 def plot_availability():
@@ -16,4 +16,4 @@ def plot_availability():
 
 def plot_locations():
     df = pd.read_csv(os.path.join(Config.DATA_DIR, 'wedding', 'locations.csv'))
-    return px.scatter_geo(df, lat='Latitude', lon='Longitude', color='Venue', hover_data=['MinAirport'])
+    return px.scatter_mapbox(df, lat='Latitude', lon='Longitude', color='Venue', hover_data=['MinAirport'])

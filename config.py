@@ -17,3 +17,5 @@ class Config(object):
     ROOT_DIR = ROOT_DIR
     DATA_DIR = os.path.join(ROOT_DIR, 'data')
     RESULTS_DIR = os.path.join(ROOT_DIR, 'results')
+    mapbox_token = 'pk.eyJ1Ijoic3B3aGl0ZTEzMzciLCJhIjoiY2ppc3g5Yms0MWxsczNrdDk2cWx5Y3h5eSJ9.cyqzPXRz_Y_382m-tZqIIA'
+    CLOUD_DATA = 's3://scott-p-white/website/data'
