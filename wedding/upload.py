@@ -14,7 +14,7 @@ def upload():
     data_sync = '{} {}'.format(Config.DATA_DIR, Config.CLOUD_DATA)
 
     logger.info('Uploading Data')
-    sb_sync = sync_base + data_sync
-    sb_sync += dryrun_arg if args.dryrun else ''
-    logger.info(sb_sync)
-    os.system(sb_sync)
+    wd_sync = sync_base + data_sync
+    wd_sync += dryrun_arg if args.dryrun else ''
+    logger.info(wd_sync)
+    os.system(wd_sync)
