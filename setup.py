@@ -8,7 +8,7 @@ setup(
     author_email='spwhite1337@gmail.com',
     packages=find_packages(),
     entry_points={'console_scripts': [
-        'wd_sync = wedding.sync:sync'
+        'wd_sync = wedding.upload:upload'
     ]},
     install_requires=[
         'pandas',
