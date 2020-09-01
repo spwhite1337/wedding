@@ -1,12 +1,13 @@
-"Venue	Deposit	Fee	Alcohol	Plate	FB_min	FB_Upcharge"
-"Mustard Seed Garden						"
-"Iron Ember						"
-"The Meeting House						"
-"Newport Beach House						"
-"Meadow Brook inn						"
-"Kinney Bungalow						"
-"Glen Manor House						"
-"Mount Hope Farm						"
-"Blissful Meadows	1000				5000	26%"
-"Barn At Zionsville						"
-"Mustard Seed Garden			20.5			"
+Venue,RentalFee
+"Mustard Seed Garden						",
+"Iron Ember						",
+"The Meeting House						",
+"Newport Beach House						",
+"Meadow Brook inn						",
+"Kinney Bungalow						",
+"Glen Manor House						",
+"Mount Hope Farm						",
+"Blissful Meadows	1000				5000	26%",
+"Barn At Zionsville						",
+"Mustard Seed Garden			20.5			",
+Olio,6000
