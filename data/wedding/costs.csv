@@ -1,13 +1,16 @@
-Venue,RentalFee
-"Mustard Seed Garden						",
-"Iron Ember						",
-"The Meeting House						",
-"Newport Beach House						",
-"Meadow Brook inn						",
-"Kinney Bungalow						",
-"Glen Manor House						",
-"Mount Hope Farm						",
-"Blissful Meadows	1000				5000	26%",
-"Barn At Zionsville						",
-"Mustard Seed Garden			20.5			",
-Olio,6000
+Venue,RentalFee,Other
+"Mustard Seed Garden						",,
+"Iron Ember						",,
+"The Meeting House						",,
+"Newport Beach House						",,
+"Meadow Brook inn						",,
+"Kinney Bungalow						",,"No AC, not that cute"
+"Glen Manor House						",,
+"Mount Hope Farm						",,
+Blissful Meadows,,"No heating or AC, hotels 30 mins away in Uxbridge"
+"Barn At Zionsville						",,
+Mustard Seed Garden,,
+Olio,6000,"Rustic look, not the perfect asthetic"
+Barn & Lights,,Doesn't want it because it is remote and new
+Barn at Bull Meadow,,"Expensive, Never had a wedding"
+Smith Farm at Brooksby Farm,,Too ugly of a place
