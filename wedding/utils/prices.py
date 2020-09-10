@@ -4,16 +4,20 @@ def mustard_seed(num_guests: int) -> float:
     drink = 26.5  # 21.5 is cheaper option
     drink_service = .2
     drink_tax = .07
-    food = 9107 / 157
+    food = 9107 / 157  # 59
     rental = 7500 * 1.07
-    return drink * (1 + drink_service * drink_tax) * num_guests + food * num_guests + rental
+    decor = 200 + 2 * num_guests  # lounge + chairs
+    return drink * (1 + drink_service + drink_tax) * num_guests + food * num_guests + rental + decor
 
 
 def smith_farm(num_guests: int) -> float:
-    food = 80  # Estimate
+    food = 63 + 12  # Estimate
     food_tax = 1.07
     food_flat_fee = 250
-    return food_flat_fee + food * food_tax * num_guests
+    rental = 5000
+    drinks = 15 * 5
+    helper = 1000
+    return rental + food_flat_fee + food * food_tax * num_guests + drinks * num_guests + helper
 
 
 def canal_337(num_guests: int) -> float:
@@ -39,9 +43,9 @@ def winery_1620(num_guests: int) -> float:
         bar_fee = 1400
 
     # Estimate at $15 / hr / guest
-    drinks = 15 * num_guests * 5
+    drinks = 15 * 5
 
-    return rental_fee + food * food_upcharge + bar_fee + drinks
+    return rental_fee + food * food_upcharge * num_guests + bar_fee + drinks * num_guests
 
 
 prices = {
