@@ -51,7 +51,7 @@ def winery_1620(num_guests: int) -> float:
 def red_lion_inn(num_guests: int) -> float:
     rental_fee = 3000
     admin = 0.22
-    tax = 0.854
+    tax = 0.0854
     food_drink = 180
     return (rental_fee + food_drink * num_guests) * (1 + admin + tax)
 
