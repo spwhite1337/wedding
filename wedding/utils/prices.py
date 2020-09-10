@@ -48,9 +48,18 @@ def winery_1620(num_guests: int) -> float:
     return rental_fee + food * food_upcharge * num_guests + bar_fee + drinks * num_guests
 
 
+def red_lion_inn(num_guests: int) -> float:
+    rental_fee = 3000
+    admin = 0.22
+    tax = 0.854
+    food_drink = 180
+    return (rental_fee + food_drink * num_guests) * (1 + admin + tax)
+
+
 prices = {
     'MustardSeed': mustard_seed,
     'Canal337': canal_337,
     'Smith': smith_farm,
-    'Winery1620': winery_1620
+    'Winery1620': winery_1620,
+    'RedLion': red_lion_inn
 }
