@@ -4,7 +4,9 @@ def mustard_seed(num_guests: int) -> float:
     drink = 26.5  # 21.5 is cheaper option
     drink_service = .2
     drink_tax = .07
-    return drink *(1 + drink_service * drink_tax) * num_guests
+    food = 9107 / 157
+    rental = 7500 * 1.07
+    return drink * (1 + drink_service * drink_tax) * num_guests + food * num_guests + rental
 
 
 def smith_farm(num_guests: int) -> float:
