@@ -15,7 +15,7 @@ def smith_farm(num_guests: int) -> float:
     food_tax = 1.07
     food_flat_fee = 250
     rental = 5000
-    drinks = 15 * 5
+    drinks = 10 * 5
     helper = 1000
     return rental + food_flat_fee + food * food_tax * num_guests + drinks * num_guests + helper
 
@@ -70,11 +70,21 @@ def commons(num_guests: int) -> float:
     return (rental + food_pre_tax + security + beer) * (1 + sales_tax + gratuity)
 
 
+def hamilton_hall(num_guests: int) -> float:
+    rental = 3750
+    beer = 31
+    food = 75 + 15 + 5
+    food_tax = 0.07
+    sales_tax = 0.07
+    return (rental + food * (1 + food_tax) * num_guests + beer * num_guests) * (1 + sales_tax)
+
+
 prices = {
     'MustardSeed': mustard_seed,
     'Canal337': canal_337,
     'Smith': smith_farm,
     'Winery1620': winery_1620,
     'RedLion': red_lion_inn,
-    'Commons': commons
+    'Commons': commons,
+    'Hamilton': hamilton_hall
 }
