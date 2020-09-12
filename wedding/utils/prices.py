@@ -56,10 +56,25 @@ def red_lion_inn(num_guests: int) -> float:
     return (rental_fee + food_drink * num_guests) * (1 + admin + tax)
 
 
+def commons(num_guests: int) -> float:
+    rental = 3000
+    food_min = 10500
+    security = 59.2 * 8
+    food_add = 0.08
+    sales_tax = 0.07
+    gratuity = 0.2
+    food = 60 + 12 + 5
+    beer = 35 + 10
+    food_pre_tax = food * num_guests if food * num_guests > food_min else food_min
+    food_pre_tax *= (1 + food_add)
+    return (rental + food_pre_tax + security + beer) * (1 + sales_tax + gratuity)
+
+
 prices = {
     'MustardSeed': mustard_seed,
     'Canal337': canal_337,
     'Smith': smith_farm,
     'Winery1620': winery_1620,
-    'RedLion': red_lion_inn
+    'RedLion': red_lion_inn,
+    'Commons': commons
 }
