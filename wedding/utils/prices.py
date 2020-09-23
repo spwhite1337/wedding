@@ -79,6 +79,12 @@ def hamilton_hall(num_guests: int) -> float:
     return (rental + food * (1 + food_tax) * num_guests + beer * num_guests) * (1 + sales_tax)
 
 
+def tewksbury(num_guests: int) -> float:
+    rental = 0
+    food = 0
+    return food * num_guests + rental
+
+
 prices = {
     'MustardSeed': mustard_seed,
     'Canal337': canal_337,
@@ -86,5 +92,6 @@ prices = {
     'Winery1620': winery_1620,
     'RedLion': red_lion_inn,
     'Commons': commons,
-    'Hamilton': hamilton_hall
+    'Hamilton': hamilton_hall,
+    'Tewksbury': tewksbury
 }
