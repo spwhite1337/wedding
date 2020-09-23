@@ -13,6 +13,7 @@ def load_weather() -> pd.DataFrame:
     # Get important parts of date
     df['year'] = df['dt_iso'].dt.year
     df['month'] = df['dt_iso'].dt.month
+    df['week'] = df['dt_iso'].dt.isocalendar().week
     df['day'] = df['dt_iso'].dt.day
     df['hour'] = df['dt_iso'].dt.hour
 
