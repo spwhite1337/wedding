@@ -13,6 +13,9 @@ def load_weather() -> pd.DataFrame:
     # Convert temperature to F
     for t in ['temp', 'temp_min', 'temp_max']:
         df[t] = (df[t] - 273.15) * (9 / 5) + 32
+    # Convert rain to in
+    for r in ['rain_1h', 'rain_3h']:
+        df[r] = df[r] * 0.0393701
     # Get important parts of date
     df['year'] = df['dt_iso'].dt.year
     df['month'] = df['dt_iso'].dt.month
