@@ -13,6 +13,7 @@ class WeatherAnalyzer(object):
 
     # Time-series by hour on month-day or range-of-days plotting mean / std or median / std
     def time_series_by_day(self, month: int, day: int):
+        logger.info('Time series on {}-{}'.format(month, day))
         df = load_weather()
         df = df[(df['month'] == month) & (df['day'] == day)]
         df = df.groupby('hour').agg(temp=('temp', 'mean'), temp_std=('temp', 'std')).reset_index()
@@ -30,6 +31,7 @@ class WeatherAnalyzer(object):
 
     # Time-series of temp by hour on month-day broken down by year
     def time_series_on_month_day_by_year(self, month: int, day: int):
+        logger.info('Time series on {}-{} by year'.format(month, day))
         df = load_weather()
         df = df[(df['month'] == month) & (df['day'] == day)]
         plt.figure(figsize=(8, 8))
@@ -46,6 +48,7 @@ class WeatherAnalyzer(object):
 
     # Distribution of temperatures by month-day-hour
     def distribution_by_month_day_hour(self, month: int, day: int, hour: int):
+        logger.info('Distribution of Temperature by {}, {} at {}'.format(month, day, hour))
         df = load_weather()
         df = df[(df['month'] == month) & (df['day'] == day) & (df['hour'] == hour)]
         plt.figure(figsize=(8, 8))
@@ -69,6 +72,7 @@ class WeatherAnalyzer(object):
 
     # Rain by hour
     def distribution_rain_by_month_day(self, month: int, day: int):
+        logger.info('Distribution of Rain on {}-{}'.format(month, day))
         df = load_weather()
         df = df[(df['month'] == month) & (df['day'] == day)]
         plt.figure(figsize=(8, 8))
